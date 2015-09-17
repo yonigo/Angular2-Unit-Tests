@@ -5,6 +5,7 @@
 		<script src="https://jspm.io/system@0.16.js"></script>
 		<script src="https://code.angularjs.org/2.0.0-alpha.34/angular2.dev.js"></script>
 		<script src="https://code.angularjs.org/2.0.0-alpha.33/router.dev.js"></script>
+		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
 		<base href="/">
 	</head>
 	<body>
@@ -13,6 +14,21 @@
 			baseElement = document.querySelector('base');
 			baseElement.attr = baseElement.getAttribute;
 			System.import('scripts/build/bootstrap');
+		</script>
+
+		<script type="text/javascript">
+
+			Parse.initialize("NzSjvRfYiL9JgOMkV6YFh4GphCgW94Hg7OlYBzHa", "pNl8q5v1cqnmZF8hahruS7XXbTHCDEw7KRULVsWV");
+			var LocationObject = Parse.Object.extend("Location");
+			var location = new LocationObject();
+			location.save({home: 'Dizengoff 24'}, {
+				success: function(object) {
+					$(".success").show();
+				},
+				error: function(model, error) {
+					$(".error").show();
+				}
+			});
 		</script>
 	</body>
 </html>
