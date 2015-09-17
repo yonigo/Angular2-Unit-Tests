@@ -7,4 +7,4 @@ export const _settings = {
 	componentsPath: _buildPath + '/components',
 	directivesPath: _buildPath + '/directives',
 	pagesPath: _buildPath + '/pages'
-};
+}; 
