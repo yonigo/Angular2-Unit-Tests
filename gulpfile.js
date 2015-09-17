@@ -65,7 +65,7 @@ gulp.task(tasks.defaultTask, function () {
 	runSequence(tasks.cleanSrc,
 		tasks.typeScript,
 		tasks.htmlAndCss,
-		tasks.test,
+		//tasks.test,
 		tasks.startWebServer,
 		tasks.openBrowser,
 		tasks.watch);
