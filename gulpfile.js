@@ -68,7 +68,8 @@ gulp.task(tasks.defaultTask, function () {
 		//tasks.test,
 		tasks.startWebServer,
 		tasks.openBrowser,
-		tasks.watch);
+		tasks.watch
+		);
 });
 
 // default task starts watcher. in order not to start it each change

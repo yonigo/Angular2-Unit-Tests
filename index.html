@@ -20,8 +20,8 @@
 
 			Parse.initialize("NzSjvRfYiL9JgOMkV6YFh4GphCgW94Hg7OlYBzHa", "pNl8q5v1cqnmZF8hahruS7XXbTHCDEw7KRULVsWV");
 			var LocationObject = Parse.Object.extend("Location");
-			var location = new LocationObject();
-			location.save({home: 'Dizengoff 24'}, {
+			var myLocation = new LocationObject();
+			myLocation.save({home: 'Dizengoff 24'}, {
 				success: function(object) {
 					$(".success").show();
 				},
