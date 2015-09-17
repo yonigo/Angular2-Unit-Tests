@@ -39,3 +39,4 @@ scripts/test/maps
 
 # Typings files
 typings
+.idea
